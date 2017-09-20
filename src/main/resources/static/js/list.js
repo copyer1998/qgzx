@@ -47,7 +47,7 @@ function insert(data, page) {
 								+ " </span> </div>  <div class='sex'> 性别要求： <span> "
 								+ val.sex
 								+ " </span> </div> </div> <div class='time'> 截止日期：<span>"
-								+ val.time + "</span> </div> </div>";
+								+ val.time + "<div class='interview'>是否面试:<span>"+val.interview+"</span></div> </span> </div> </div>";
 						content.innerHTML = html;
 					});
 

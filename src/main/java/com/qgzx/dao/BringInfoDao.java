@@ -41,6 +41,7 @@ public interface BringInfoDao {
 			@Result(property = "grade", column = "grade"),
 			@Result(property = "play", column = "play"),
 			@Result(property = "need", column = "need"),
+			@Result(property = "interview",column = "interview"),
 	})
 	BringInfo queryById(@Param("id") int id);
 

@@ -51,6 +51,7 @@ function addData() {
 				"grade" : $("#grade").val(),
 				"place" : $("#place").val(),
 				"need" : $("#need").val(),
+				"interview":$("#interview").val(),
 				"people" : $("#people").val()
 			}),
 			traditional : false,

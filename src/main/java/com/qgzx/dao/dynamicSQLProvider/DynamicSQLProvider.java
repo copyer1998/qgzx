@@ -70,6 +70,9 @@ public class DynamicSQLProvider {
                 if (bringInfo.getGrade()!= null)  
                 {  
                     SET("grade = #{bringInfo.grade}");  
+                }if (bringInfo.getGrade()!= null)
+                {
+                    SET("grade = #{bringInfo.grade}");
                 }
                 
                 WHERE("id = #{bringInfo.id}");  
