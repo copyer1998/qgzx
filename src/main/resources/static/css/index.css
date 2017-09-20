@@ -12,10 +12,6 @@ a {
     color: black;
 }
 
-a:hover {
-    cursor: pointer;
-}
-
 .header {
     background-color: steelblue;
     height: 50px;
@@ -44,6 +40,7 @@ a:hover {
 
 .name a:hover {
     color: orange;
+    cursor: pointer;
 }
 
 .word {

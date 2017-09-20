@@ -14,9 +14,6 @@ a {
     color: black;
 }
 
-a:hover {
-    cursor: pointer;
-}
 
 .header {
     background-color: steelblue;
@@ -46,6 +43,9 @@ a:hover {
 
 .name {
     font-size: 1.2em;
+}
+.name a:hover {
+    cursor: pointer;
 }
 
 .time {
