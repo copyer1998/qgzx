@@ -18,6 +18,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QgzxApplication {
 	public static void main(String[] args) {
 		 SpringApplication.run(QgzxApplication.class, args);
-		 
+
 	}
 }
