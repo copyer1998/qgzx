@@ -16,7 +16,7 @@ function addData() {
 	var peopleResult = false;
 	titleResult = checkString('单位名称', "title", 30);
 	nameResult = checkString('招聘职位', "name", 20);
-	typeResult = checkString('单位类型', "type", 10);
+	typeResult = checkString('岗位性质', "type", 10);
 	locationResult = checkString('单位地址', "location", 50);
 	worktimeResult = checkString('工作时间', "worktime", 30);
 	workplaceResult = checkString('工作地点', "workplace", 50);
@@ -25,7 +25,7 @@ function addData() {
 	peopleResult = checkNumber('招聘人数', "people", 8);
 	gradeResult = checkString('年级要求', "grade", 10);
 	placeResult = checkString('校区要求', "place", 10);
-	needResult = checkString('具体要求', "need", 200);
+	needResult = checkString('工作内容', "need", 200);
 
 	if (nameResult == false || titleResult == false || typeResult == false
 			|| locationResult == false || worktimeResult == false
