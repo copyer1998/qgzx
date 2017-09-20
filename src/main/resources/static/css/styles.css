@@ -16,47 +16,6 @@ span {
     color: grey;
 }
 
-.menu-item {
-    list-style: none;
-    background-color: #fff;
-    border: 1px solid #d1d5da;
-    border-radius: 3px;
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 8px 10px;
-
-    /*border-bottom: 1px solid #e1e4e8;*/
-}
-
-.menu-item:hover {
-    cursor: pointer;
-    text-decoration: none;
-    background-color: #f6f8fa
-}
-
-.menu-item:active {
-    color: red;
-}
-
-.menu-item {
-    font-weight: 600;
-    color: #0366d6;;
-    cursor: default;
-    background-color: #fff
-}
-
-
-.menu-item::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 2px;
-    content: "";
-    background-color: #e36209
-}
-
 /*让底部显示美观*/
 footer {
     position: absolute;
@@ -76,6 +35,49 @@ footer {
 .form-control {
     padding: 10px;
 }
+
+.sidebar {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 260px;
+    height: 100%;
+    float: left;
+    background-color: #2B333E;
+    position: fixed;
+    left: 0;
+    z-index: 9;
+}
+
+.sidebar .nav > li > a {
+    padding: 18px 30px;
+    color: #AEB7C2;
+    border-left: 5px solid transparent;
+}
+
+.nav li>a:hover{
+    color: yellow;
+}
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus,
+.sidebar .nav > li > a.active {
+    color: #fff;
+    background-color: transparent;
+}
+
+.sidebar .nav > li > a:focus,
+.sidebar .nav > li > a.active {
+    background-color: #252c35;
+    border-left-color: #00AAFF;
+}
+
+.sidebar .nav > li > a .badge {
+    font-weight: 400;
+    background-color: #F9354C;
+}
+
 
 
 
