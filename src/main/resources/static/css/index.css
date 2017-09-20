@@ -7,6 +7,10 @@ body {
     font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, sans-serif;
 }
 
+p {
+    font-size: 13px;
+    color: #cccccc;
+}
 a {
     text-decoration: none;
     color: black;
