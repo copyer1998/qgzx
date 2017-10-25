@@ -3,15 +3,21 @@ package com.qgzx.dao.dynamicSQLProvider;
 import org.apache.ibatis.jdbc.SQL;
 
 import com.qgzx.entity.BringInfo;
+
 /**
  * 提供动态SQL
- * 
+ *
  * @author zhangzhengan
- * @version  
  * @since JDK 1.7
  */
 public class DynamicSQLProvider {
-	public String update(BringInfo bringInfo){
+    /**
+     * Update string.
+     *
+     * @param bringInfo the bring info
+     * @return the string
+     */
+    public String update(BringInfo bringInfo){
         return new SQL() {
         	{  
                 UPDATE("bringInfo");

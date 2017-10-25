@@ -19,12 +19,22 @@ import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Bring info controller.
+ */
 @Controller
 public class BringInfoController {
     @Resource
     private BringInfoService bringInfoService;
 
 
+    /**
+     * Insert bring info result.
+     *
+     * @param bringInfo the bring info
+     * @param session   the session
+     * @return the result
+     */
     @ResponseBody
     @RequestMapping(value = "/insertBringInfo", method = RequestMethod.POST)
     public Result<String> insertBringInfo(@RequestBody BringInfo bringInfo, HttpSession session) {
@@ -112,6 +122,12 @@ public class BringInfoController {
         return new Result<String>(true, "添加成功", null);
     }
 
+    /**
+     * Gets bring info.
+     *
+     * @param request the request
+     * @return the bring info
+     */
     @ResponseBody
     @RequestMapping(value = "/getBringInfo", method = RequestMethod.POST)
     public Result<List<BringInfo>> getBringInfo(HttpServletRequest request) {
@@ -126,6 +142,11 @@ public class BringInfoController {
         return new Result<List<BringInfo>>(true, "success", list);
     }
 
+    /**
+     * Bring info list result.
+     *
+     * @return the result
+     */
     @ResponseBody
     @RequestMapping(value = "/bringInfoList", method = RequestMethod.POST)
     public Result<BringInfoPage> bringInfoList() {
@@ -145,6 +166,13 @@ public class BringInfoController {
         return new Result<BringInfoPage>(true, "success", bringInfoPage);
     }
 
+    /**
+     * Delete bring info result.
+     *
+     * @param bringInfo the bring info
+     * @param session   the session
+     * @return the result
+     */
     @ResponseBody
     @RequestMapping(value = "/deleteBringInfo", method = RequestMethod.POST)
     public Result<String> deleteBringInfo(@RequestBody BringInfo bringInfo, HttpSession session) {
@@ -169,6 +197,13 @@ public class BringInfoController {
         return new Result<String>(true, "删除成功", null);
     }
 
+    /**
+     * Update bring info result.
+     *
+     * @param bringInfo the bring info
+     * @param session   the session
+     * @return the result
+     */
     @ResponseBody
     @RequestMapping(value = "/updateBringInfo", method = RequestMethod.POST)
     public Result<String> updateBringInfo(@RequestBody BringInfo bringInfo, HttpSession session) {
@@ -243,7 +278,6 @@ public class BringInfoController {
             // TODO Auto-generated catch block
             return new Result<String>(false, "未知错误!", null);
         }
-        ;
 
         if (bool == false) {
             return new Result<String>(false, "更新失败", null);
@@ -252,6 +286,12 @@ public class BringInfoController {
         return new Result<String>(true, "更新成功", null);
     }
 
+    /**
+     * Gets bring info by id.
+     *
+     * @param bringInfo the bring info
+     * @return the bring info by id
+     */
     @ResponseBody
     @RequestMapping(value = "/getBringInfoById", method = RequestMethod.POST)
     public Result<List<BringInfo>> getBringInfoById(@RequestBody BringInfo bringInfo) {
@@ -272,6 +312,12 @@ public class BringInfoController {
         return new Result<List<BringInfo>>(true, "success", list);
     }
 
+    /**
+     * Next or before page result.
+     *
+     * @param backPage the back page
+     * @return the result
+     */
     @ResponseBody
     @RequestMapping(value = "/nextOrBeforePage", method = RequestMethod.POST)
     public Result<BringInfoPage> nextOrBeforePage(@RequestBody BackPage backPage) {

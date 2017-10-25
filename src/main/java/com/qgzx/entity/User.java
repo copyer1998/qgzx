@@ -1,6 +1,9 @@
 package com.qgzx.entity;
 
 
+/**
+ * The type User.
+ */
 public class User {
     //
 	private String id;
@@ -8,34 +11,94 @@ public class User {
 	private String userName;
 	private String qq;
 	private String phoneNumber;
-	public String getId() {
+
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
 		return id;
 	}
-	public void setId(String id) {
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(String id) {
 		this.id = id;
 	}
-	public String getPassword() {
+
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
 		return password;
 	}
-	public void setPassword(String password) {
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getUserName() {
+
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
 		return userName;
 	}
-	public void setUserName(String userName) {
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getQq() {
+
+    /**
+     * Gets qq.
+     *
+     * @return the qq
+     */
+    public String getQq() {
 		return qq;
 	}
-	public void setQq(String qq) {
+
+    /**
+     * Sets qq.
+     *
+     * @param qq the qq
+     */
+    public void setQq(String qq) {
 		this.qq = qq;
 	}
-	public String getPhoneNumber() {
+
+    /**
+     * Gets phone number.
+     *
+     * @return the phone number
+     */
+    public String getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(String phoneNumber) {
+
+    /**
+     * Sets phone number.
+     *
+     * @param phoneNumber the phone number
+     */
+    public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	@Override

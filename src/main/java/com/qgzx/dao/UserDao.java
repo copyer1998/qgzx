@@ -8,16 +8,20 @@ import org.apache.ibatis.annotations.Select;
 
 import com.qgzx.entity.User;
 
+/**
+ * The interface User dao.
+ */
 @Mapper
 public interface UserDao {
-	/**
-	 * 
-	 * @author zhangzhengan
-	 * @param id
-	 * @return
-	 * @since JDK 1.7
-	 */
-	@Select("select * from user where id=#{id}")
+    /**
+     * Query by id user.
+     *
+     * @param id the id
+     * @return user
+     * @author zhangzhengan
+     * @since JDK 1.7
+     */
+    @Select("select * from user where id=#{id}")
 	@Results({ 
 			@Result(property = "id", column = "id"),
 			@Result(property = "password", column = "password"),

@@ -128,12 +128,12 @@ function update() {
     placeResult = checkString('校区要求', "place", 10);
     needResult = checkString('工作内容', "need", 200);
 
-    if (nameResult == false || titleResult == false || typeResult == false
-        || locationResult == false || worktimeResult == false
-        || workplaceResult == false || payResult == false
-        || deadlineResult == false || peopleResult == false
-        || gradeResult == false || placeResult == false
-        || needResult == false) {
+    if (nameResult === false || titleResult === false || typeResult === false
+        || locationResult === false || worktimeResult === false
+        || workplaceResult === false || payResult === false
+        || deadlineResult === false || peopleResult === false
+        || gradeResult === false || placeResult === false
+        || needResult === false) {
 
     } else {
 
@@ -153,7 +153,7 @@ function update() {
                 "grade": $("#grade").val(),
                 "place": $("#place").val(),
                 "need": $("#need").val(),
-                "interview":$("#interview").val(),
+                "interview": $("#interview").val(),
                 "people": $("#people").val()
             }),
             traditional: false,
@@ -188,7 +188,7 @@ function del(id) {
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
         success: function (data) {
-            if (data.success == true) {
+            if (data.success === true) {
                 // 登录成功，页面跳转
                 // window.location.href = loginAndRegister.URL.loginSuccess();
                 alert(data.message);
@@ -210,7 +210,7 @@ function checkNumber(name, object, limitLength) {
         alert(name + '只能输入数字!');
         document.getElementById(object).value = '';
         return false;
-    } else if (document.getElementById(object).value.length == 0) {
+    } else if (document.getElementById(object).value.length === 0) {
         alert(name + '不能为空' + '!');
 
         return false;
@@ -229,7 +229,7 @@ function checkString(name, object, limitLength) {
         alert(name + '长度必须小于' + limitLength + '!');
         document.getElementById(object).value = '';
         return false;
-    } else if (document.getElementById(object).value.length == 0) {
+    } else if (document.getElementById(object).value.length === 0) {
         alert(name + '不能为空' + '!');
 
         return false;

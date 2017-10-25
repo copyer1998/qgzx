@@ -3,11 +3,18 @@ package com.qgzx.service;
 import com.qgzx.entity.User;
 
 
+/**
+ * The interface User service.
+ */
 public interface UserService {
 	/**
-	 * @author zhangzhengan 
-	 * @param User
+	 * Login string.
+	 *
+	 * @param user the user
+	 * @return the string
+	 * @throws Exception the exception
+	 * @author zhangzhengan
 	 * @since JDK 1.7
 	 */
-	public String login(User user) throws Exception;
+	String login(User user) throws Exception;
 }

@@ -7,6 +7,10 @@ import org.springframework.stereotype.Service;
 import com.qgzx.dao.UserDao;
 import com.qgzx.entity.User;
 import com.qgzx.service.UserService;
+
+/**
+ * The type User service.
+ */
 @Service
 public class UserServiceImpl implements UserService {
 	
