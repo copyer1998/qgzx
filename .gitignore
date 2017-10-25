@@ -1,1 +1,5 @@
 /target/
+/src/main/resources/static/css/list.css
+.idea/inspectionProfiles/
+.idea/workspace.xml
+src/test/
