@@ -21,6 +21,6 @@ public class QgzxApplication {
 	 */
 	public static void main(String[] args) {
 		 SpringApplication.run(QgzxApplication.class, args);
-
+		System.out.println("勤工助学项目启动成功!");
 	}
 }

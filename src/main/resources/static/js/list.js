@@ -9,20 +9,20 @@ window.onload = function () {
         contentType: 'application/json; charset=UTF-8',
         timeout: 1000,
         cache: false,
-        bedforeSend: LoadFunction,
-        error: erryFunction,
-        success: succFunction
+        beforeSend: LoadFunction,
+        error: errorFunction,
+        success: succeedFunction
     })
 
     function LoadFunction() {
 
     }
 
-    function erryFunction() {
+    function errorFunction() {
         alert("error")
     }
 
-    function succFunction(data) {
+    function succeedFunction(data) {
         insert(data.data.list, data.data.backPage);
     }
 }
